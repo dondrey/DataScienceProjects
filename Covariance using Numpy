@@ -1,0 +1,8 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+pag = np.random.normal(3.0, 1.0, 1000)
+pur = np.random.normal(50.0, 10.0, 1000)
+pur = np.random.normal(50.0, 10.0, 1000) / pag
+plt.scatter(pag, pur)
+np.cov(pag, pur)
